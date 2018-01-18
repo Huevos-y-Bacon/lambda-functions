@@ -1,8 +1,12 @@
 # EC2 and related
 
-## lambda_timebasedebssnapshotcleanup.py
-
 Instead of using "deleteOn" or other tag-based methods of identifying and deleting snapshots, I needed a function that can calculate the age and delete based on that. I do use a filter based on Snapshot Description, since this seems to be the only way I can identify snapshots created by AWS Storage Gateway scheduled snapshots.
+
+## lambda_timebasedebssnapshotcleanup.yaml
+
+Spin up this template in your environment so you dont have to worry about configuring permissions and the trigger.
+
+## lambda_timebasedebssnapshotcleanup.py
 
 Set dryrun to "yes" and you might see logs like this:
 
