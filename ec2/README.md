@@ -4,7 +4,7 @@ Instead of using "deleteOn" or other tag-based methods of identifying and deleti
 
 ## lambda_timebasedebssnapshotcleanup.yaml
 
-Spin up this template in your environment so you dont have to worry about configuring permissions and the trigger.
+Spin up this CloudFormation template in your environment so you dont have to worry about configuring permissions and the trigger.
 
 ## lambda_timebasedebssnapshotcleanup.py
 
