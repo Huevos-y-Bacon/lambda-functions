@@ -1,4 +1,4 @@
-# EC2 and related
+# Time Based EBS Snapshots Cleanup (Lambda)
 
 Instead of using "deleteOn" or other tag-based methods of identifying and deleting snapshots, I needed a function that can calculate the age and delete based on that. I do use a filter based on Snapshot Description, since this seems to be the only way I can identify snapshots created by AWS Storage Gateway scheduled snapshots.
 
