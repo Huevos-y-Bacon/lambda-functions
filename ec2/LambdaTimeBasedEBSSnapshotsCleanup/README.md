@@ -8,22 +8,8 @@ Spin up this CloudFormation template in your environment so you dont have to wor
 
 ## Lambda test event
 
-Create a test event in Lambda to make sure it works. The account Id is your own. The rule Arn can be copied from CloudWatch after the CloudFormation stack has been created.
+Create a test event in Lambda to make sure it works.
 
-```
-{
-  "account": "123456789012",
-  "region": "eu-west-1",
-  "detail": {},
-  "detail-type": "Scheduled Event",
-  "source": "aws.events",
-  "time": "1970-01-01T00:00:00Z",
-  "id": "cdc73f9d-aea9-11e3-9d5a-835b769c0d9c",
-  "resources": [
-    "arn:aws:events:eu-west-1:123456789012:rule/LambdaTest-LambdaTimeBasedEBSSnapshotsCleanup-J8FBPRDXJJYG"
-  ]
-}
-```
 ## lambda_timebasedebssnapshotcleanup.py
 
 Contains just the python code
